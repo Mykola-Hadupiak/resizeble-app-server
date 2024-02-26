@@ -5,11 +5,13 @@ But before that, to initialize the tables in the database, you can write ./src/s
 I used PostgreSQL because it says I can use any database.
 
 Also, you need to insert your data into the .env file, I have it standard in this format:
+```
 PORT=3005
 DB_HOST=localhost
 DB_USER=postgres
 DB_PASSWORD=postgres
 DB_DATABASE=postgres
+```
 
 And so, to add text to the database, you need to send a POST request to /text with the required parameters in the body of the request title.
 
